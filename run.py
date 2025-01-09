@@ -10,7 +10,17 @@ def index():
 
 @app.route("/")
 def about():
-    return render_template("/templates/about.html")
+    return render_template("/about.html")
+
+
+@app.route("/")
+def contact():
+    return render_template("/contact.html")
+
+
+@app.route("/")
+def services():
+    return render_template("/services.html")
 
 
 if __name__ == "__main__":
