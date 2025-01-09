@@ -169,7 +169,7 @@ The site needs to conform to the principles of UX in all five different planes.
 
 ### Structure
 
-The website consists of five pages: Home, Contact, Bookings, Services, Gallery 
+The website consists of four pages: Home, About, Contact, Services  
 
 ### Wireframes
 
