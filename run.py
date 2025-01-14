@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("/static/node_modules/startbootstrap-small-business/dist/index.html")
+    return render_template("/templates/index.html")
 
 
 @app.route("/")
