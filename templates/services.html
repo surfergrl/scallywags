@@ -1,4 +1,65 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Services</h1>
+<div class="container px-4 px-lg-5">
+    
+    <!-- Images area -->
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="col-sm-3">
+            <h1>Services</h1>
+        </div>
+        <div class="col-sm-3"><img class="img-fluid rounded mb-4 mb-lg-0"
+                src="/static/node_modules/startbootstrap-small-business/dist/assets/SN-hi5.jpg" alt="Dog high 5" /></div>
+        <div class="col-sm-3">
+            <img class="img-fluid rounded mb-4 mb-lg-0"
+                src="/static/node_modules/startbootstrap-small-business/dist/assets/SN-mol.jpg" alt="Molly" /></div>
+        </div>
+    </div>
+
+    <!-- Login area -->
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+        <div class="card-body">
+            <p class="text-white m-0">Log in to book a walk, amend your pet's details etc.</p>
+            <div class="card-footer"><a class="btn btn-primary btn-sm" href=" {{ url_for('contact') }}">Log in</a></div>
+            <hr>
+            <p class="text-white m-0">Your pet must have had a meet & greet in order to register for my services.</p>
+            <div class="card-footer"><a class="btn btn-primary btn-sm" href=" {{ url_for('contact') }}">Book now</a></div>
+        </div>
+    </div>
+    <!-- List of services -->
+    <div class="row gx-4 gx-lg-5">
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">Dog Walking</h2>
+                    <p class="card-text">Whether it’s a brisk walk in the park or a leisurely stroll, I make sure your dog gets the exercise they need to thrive. I cater to all breeds, sizes, and energy levels.</p>
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href=" {{ url_for('contact') }}">Bookings</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">Pet Sitting</h2>
+                    <p class="card-text">When you’re away, I’ll be there to care for your pets in the comfort of their own home. I provide feeding, playtime, and companionship to keep them content.</p>
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href=" {{ url_for('contact') }}">Enquire</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">Other Services</h2>
+                    <p class="card-text">
+                        <ul>
+                        <li>Pet Boarding: Safe and loving care in my home.</li>
+                        <li>Pet Taxi: Reliable transportation for vet visits or grooming appointments.</li>
+                        <li>Grooming: Bathing, brushing, and basic grooming services to keep your pet looking their best.</li>
+                        </ul>
+                    </p>
+                    </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href=" {{ url_for('contact') }}">Enquire</a></div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

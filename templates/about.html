@@ -1,4 +1,76 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>About</h1>
+
+<div class="container px-4 px-lg-5">
+    <!-- Heading Row-->
+    <div class="row gx-4 gx-lg-5 align-items-center my-5">
+        <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0"
+                src="/static/node_modules/startbootstrap-small-business/dist/assets/SN-collage.jpg" alt="Doggies" /></div>
+        <div class="col-lg-5">
+            <h1 class="font-weight-light">More about me and my business</h1>
+            <p>I have always loved animals, and studied and worked as a wildlife filmographer. I have worked for the BBC's Natural History unit, including spending time in Africa filming environmental documentaries. </p>
+            <p>When I finished my MA in Film Studies at Bristol University, I decided to train as a dog walker to use my skills and indulge my love of dogs, while still freelancing in film and editing. </p>
+            <p>Dog care has become my full-time job; way beyond financial rewards, this career offers me flexibility, independence and the joy of working with animals every day.</p>
+            <p>If you’re looking for a trustworthy, qualified, and passionate dog walker or pet sitter, I’m here to help. Let’s work together to ensure your pets get the care and attention they deserve.</p>
+            <p>If you have any questions at all, please do get in touch!</p>
+            <a class="btn btn-primary" href=" {{ url_for('contact') }}">Contact Me</a>
+        </div>
+    </div>
+   
+    <!-- Content Row-->
+    <div class="row gx-4 gx-lg-5">
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">What I Offer</h2>
+                    <p class="card-text">
+                        <ul>
+                        <li>Dog Walking: Whether it’s a brisk walk in the park or a leisurely stroll, I make sure your dog gets the exercise they need to thrive. I cater to all breeds, sizes, and energy levels.</li>
+                        <li>Sitting: When you’re away, I’ll be there to care for your pets in the comfort of their own home. I provide feeding, playtime, and companionship to keep them content.</li>
+                        <li>Pet Boarding: Safe and loving care in my home.</li>
+                        <li>Pet Taxi: Reliable transportation for vet visits or grooming appointments.</li>
+                        <li>Grooming: Bathing, brushing, and basic grooming services to keep your pet looking their best.</li>
+                        </ul>
+                    </p>
+
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href=" {{ url_for('about') }}">See More</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">My Qualifications</h2>
+                    <p class="card-text">
+                        I am committed to the highest standards of pet care. My qualifications include:
+                        <ul>
+                        <li>Certification in Canine First Aid Level 2 (VTQ) from the British College of Canine Studies.</li>
+                        <li>Certification in Animal Behaviour: An Introduction from the University of Oxford.</li>
+                        <li>I am a member of the National Association of Registered Pet Sitters (NARPS).</li>
+                        <li>I have an enhanced DBS check which can be seen on request.</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href=" {{ url_for('contact') }}">Contact</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">Why Choose Me?</h2>
+                    <p class="card-text">
+                        <ul>
+                        <li>Experienced & Reliable: With ten years of experience, I have built a reputation for dependability and trustworthiness.</li>
+                        <li>Flexible Scheduling: I offer services tailored to fit your busy lifestyle.</li>
+                        <li>Personalised Care: I treat every pet as if they were my own, providing individual attention and love.</li>
+                        <li>This is my full-time occupation; I am out in all weathers year-round, providing services to keep your dog's routine going.</li>
+                        </ul>
+                    </p>
+                    </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href=" {{ url_for('services') }}">Book here</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
