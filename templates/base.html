@@ -44,16 +44,20 @@
     <!-- Footer-->
     <footer class="py-5 bg-dark">
         <div class="container px-4 px-lg-5">
-            <p class="m-0 text-center text-white">Copyright &copy; The Scallywags Nanny (Emma O'Leary) 2025</p>
+            <p class="m-0 text-center text-white">Copyright &copy; The Scallywags Nanny (Emma O'Leary) <span id="copyright"></span></p>
         </div>
         <div class="container px-4 px-lg-5">
-            <p class="m-0 text-center text-white">Created by Kat Dawes</p>
+            <p class="m-0 text-center text-white">Website: <a href="https://www.perfectlyput.co.uk">Perfectly Put</a></p>
         </div>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <!-- Script to auto-update year -->
+    <script>
+        $("#copyright").text(new Date().getFullYear());
+      </script>
 </body>
 
 </html>
