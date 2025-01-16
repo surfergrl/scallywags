@@ -3,6 +3,11 @@ from flask import Flask, render_template, request, flash
 
 app = Flask(__name__)
 
+if os.path.exists("env.py"):
+    import env
+
+app.secret_key = os.environ.get("SECRET_KEY")
+
 @app.route("/")
 def index():
     return render_template("/index.html")
@@ -20,6 +25,7 @@ def contact():
         print(request.form["email"])
         print(request.form["phone"])
         print(request.form["message"])
+        flash("Thanks {}, I have received your message!".format(request.form.get("name")))
     return render_template("contact.html", page_title="Contact")
 
 
