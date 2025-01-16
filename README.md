@@ -17,7 +17,7 @@ A Django-based platform where users can book dog walking or sitting sessions, sa
 
 - Project Development & Planning
   - Project Goals
-  - User Stories
+  - User Stories  
   - Research
 - Content
 - Design, Layout & Structure
@@ -52,7 +52,7 @@ A Django-based platform where users can book dog walking or sitting sessions, sa
 
 ### User Stories
 
-The user stories are based on questions asked of the business owner. This can be found in the file user-intake.md [user-intake.md](/userintake.md)
+The user stories are based on questions asked of the business owner. This can be found in the file [user-intake.md](user-intake.md)
 
 Resulting user profiles: 
 - New potential customer who wants to research services
@@ -60,8 +60,7 @@ Resulting user profiles:
 - Current (registered) client who wants to book/amend booking/update pet details quickly
 - Potential client who wants to check information on services and apply to become a customer
 
-As there are so many variables (pets with different needs, walks of different lengths etc.), all customers meet with the owner in person before being able to use the site to book walks. 
-
+As there are so many variables (pets with different needs, walks of different lengths etc.), all customers meet with the owner in person before being able to use the site to book walks. This should be bookable online. 
 
 ---
 
@@ -71,8 +70,6 @@ As there are so many variables (pets with different needs, walks of different le
 
 I looked at various sites which offer similar services. 
 
-#### Pawshake
-
 ![Pawshake](https://www.pawshake.co.uk/)
 
 - Large site offering services from lots of different individuals 
@@ -81,68 +78,70 @@ I looked at various sites which offer similar services.
 - Clear description of how their system works. https://www.pawshake.co.uk/how-does-pawshake-work
 - FAQs etc. get a bit complicated 
 
-#### Sppot
-
-! [Sppot dog walking services](https://sppot.co.uk/dog-walking-service/)
+![Sppot dog walking services](https://sppot.co.uk/dog-walking-service/)
 
 - Sppot does not allow booking via the site; clients must contact them using the form
 - The site has clear information about the services offered
 - The site offers a lot of contact options ![Sppot Contact Page](https://sppot.co.uk/contact-us/)
 - The site is attractive, with pictures of happy dogs
 
-#### Running Duck 
-
-! [Running Duck](https://runningduckpetservices.co.uk/house-sitter-wales/)
+![Running Duck](https://runningduckpetservices.co.uk/house-sitter-wales/)
 
 - I looked at this site as it is a small service rather than one of the large aggregate sites 
 - Reviews and details of sitters are included
-- Jumbled design with some good elements; friendly feel of a small, dedicated business 
+- Jumbled design with some good elements; friendly feel of a small, dedicated business
+
+Most small or micro-business dog-walking services have a basic brochure website with no booking options. Or walkers use a bigger site like Pawshake. Emma wants to be top of her league with a professional site that does more than the basics. 
 
 ---
 
 ## Deployment
 
+Deployed using GitHub and Heroku. 
 
 ---
 
 ### Features
 
-- User Authentication
+#### User Authentication
 
-    Register, login, logout.
-    Profiles with editable address and phone number fields.
+    - Register, login, logout. 
+    - Forgot password system. 
+    - Profiles with editable address, phone number and client photo fields.
 
-- Pet Management
+#### Pet Management
 
-    Add/edit/remove pets.
-    Form validation for pet details (e.g., mandatory fields like name and age).
+    - Add/edit/remove pets.
+    - Form validation for pet details (e.g., mandatory fields like name and age).
+    - Pet info: Name, age, breed, behavioural issues, medical issues, vet contact details, max walk length, any other notes, photo, equipment (lead etc.), treats y/n, commands to use, pickup instructions (e.g. keypad number).
+    - Agreemet to terms & conditions - mandatory tick box 
 
-- Booking System
+#### Booking System
 
-    Users can view available slots for dog walking/sitting.
-    Booking forms with validation (e.g., check for overlapping slots).
+    - Users can view available slots for dog walking/sitting/meet & greet appointment.
+    - Booking forms with validation (e.g., check for overlapping slots).
 
-- Stripe Integration
+#### Stripe Integration
 
-    Payment for bookings through Stripe’s test mode.
-    Unlock booking confirmation upon successful payment.
+    - Payment for bookings through Stripe’s test mode.
+    - Email booking confirmation upon successful payment.
+    - (Future feature - appointment reminders.) 
 
-- Navigation and Layout
+#### Navigation and Layout
 
-    Main navigation bar with links: Home, About, Login/Register, My Pets, Bookings.
-    Use Bootstrap for responsive design.
+    - Main navigation bar with links: Home, About, Contact, Services, Login
+    - Bootstrap for responsive design.
 
-- JavaScript Enhancements
+#### JavaScript Enhancements
 
-    Real-time validation of booking forms (e.g., prevent double-booking on the same slot).
-    Interactive calendar to select available slots.
+    - Real-time validation of booking forms (e.g., prevent double-booking on the same slot).
+    - Interactive calendar to select available slots.
 
 ---
 
 ### Further Developments
 
 - Ability to book pet-sitting days/weeks online as well as walks. 
-- Email notifications for booking confirmations.
 - Google Maps integration for service areas.
 - Admin dashboard to manage bookings and users.
 
@@ -152,7 +151,7 @@ I looked at various sites which offer similar services.
 
 The site needs to conform to the principles of UX in all five different planes.
 
-![Usability](/assets/images/princip-UX.png)
+![Usability](https://github.com/surfergrl/sgs-gift-guide/blob/main/assets/images/princip-UX.png) 
 
 ### Content - elements to include
 
@@ -160,13 +159,7 @@ The site needs to conform to the principles of UX in all five different planes.
 
 **Tag-line** - Your trusted dog-walking and pet-sitting service in and around Bristol 
 
-
 ---
-
-### Structure
-
-The website consists of four pages: Home, About, Contact, Services  
-
 ### Wireframes
 
 I first sketched (on paper) the basic layout for the pages.
@@ -175,7 +168,13 @@ Keeping the design clean and simple was a priority both for UX and responsivenes
 
 - insert scans of drawings
 
-- Figma 
+- Wireframes
+- 
+--- 
+
+### Structure
+
+The website consists of 5 pages: Home, About, Contact, Services and Login.   
 
 ---
 
@@ -183,30 +182,44 @@ Keeping the design clean and simple was a priority both for UX and responsivenes
 
 Landing page with title, image, tagline, introduction to services. 
 
-Banner image: ![Doggy banner](/assets/images/SN-banner.png)
+- Banner image:
+![Doggy banner](https://github.com/surfergrl/scallywags/blob/main/static/node_modules/startbootstrap-small-business/dist/assets/SN-banner.png)
 
-Logo ![Scallywags Nanny logo](/assets/images/SN-logo.jpg) 
+- Logo:
+![Scallywags Nanny logo](https://github.com/surfergrl/scallywags/blob/main/static/node_modules/startbootstrap-small-business/dist/assets/SN-logo.jpg)
+
+- Introductory text.
+- Three cards with text sending users to About, Services or Contact pages via call to action buttons.
+
+#### About Page 
+
+- Collage image of business owner and dogs: ![Emma and dogs](https://github.com/surfergrl/scallywags/blob/main/static/node_modules/startbootstrap-small-business/dist/assets/SN-collage.jpg)
+- Three cards with text detailing qualifications, services, why me? info and call to action (book or contact).
 
 #### The Scallywags Nanny Contact Page 
 
-Contact details and an intro to the business owner, location map, contact form 
+- Intro text 'Every dog requires a meet-and-greet session before we can go out walking! Please get in touch via the form below.'
+- Simple JavaScriprt contact form.  
 
-Image of business owner: ![Emma O'Leary](/assets/images/SN-ems.jpg)
+#### The Scallywags Nanny Services Page 
+
+- Javascript gallery 
+- Login button
+- Meet & Greet booking button
+- Three cards with call to action (book or enquire) for bookable-online services
+
+#### The Scallywags Nanny Login Page 
+
+- Username/password form
+- Forgot password? link
+- Explanatory text right hand column 
 
 ---
 
 ### Colours - Surface plane
 
-The Scallywags Nanny brand uses earth-themed colours, with the logo in yellow, black and white. Whites, blues and greens feature heavily. The app will reflect this.
-
-Colours needed for:
-
-- Titles
-- subtitles
-- Body text - black
-- Backgrounds
-
-![SGS site colours](/assets/images/SGS-colours.png)
+- The Scallywags Nanny brand uses earth-themed colours, with the logo in yellow, black and white. Whites, blues and greens feature heavily. The app will reflect this. 
+- The client has provided lots of images of their own; the focus should be on these so the surrounding design should be simple to show them off.
 
 ---
 
@@ -217,24 +230,16 @@ Colours needed for:
 I wanted to ensure readability and consistency throughout the app, maintaining a balance between style and readability. I also wanted to ensure that the fonts complement the earthy theme of the main site.
 
 - GoogleFonts
-- FontAwesome?
-- [ezGIF](https://ezgif.com/) - Creating GIFs for the README
-- [Techsini Mockup](https://techsini.com/multi-mockup/) - Creating the mockup images for the README
-- [Favicon.io](https://favicon.io/favicon-converter/) - Used to create and add the favicon to the browser tab
+- FontAwesome 
+- [ezGIF](https://ezgif.com/) - GIFs for the README
+- [Techsini Mockup](https://techsini.com/multi-mockup/) - mockup images for the README
+- [Favicon.io](https://favicon.io/favicon-converter/) - Create and add favicon to the browser tab
+- Colour palettes from [canva.com/colours](http://canva.com/colours)
 
-Colour palettes from [canva.com/colours](http://canva.com/colours)
-
+Fonts - complement the logo colours/style  
 1. [Six Hands Rough](https://www.onlinewebfonts.com/download/f6db36f5c636e2adf912702a4ad751ec) font for headings
-
-2. **Roboto Slab:** To provide a contrast to the script font and give a modern and lcean look, I'll use this for subheadings.
-
-3. **Montserrat:** Montserrat is clean and easy to read. I will use this for body text e.g. product description.
-
-4. **Dancing Script:** Dancing Script is another script font, but it's a bit more formal than Pacifico. It can work well for adding an elegant touch to your beach-themed site.
-
-5. **Nunito:** Nunito is a rounded sans-serif font that can be a good choice for body text. It's friendly and easy on the eyes.
-
-6. **Playfair Display:** If you want to add a touch of sophistication to your headings, Playfair Display is an elegant serif font that can work well in combination with script or sans-serif fonts.
+2. subheadings
+3. body text
 
 ---
 
@@ -243,14 +248,14 @@ Colour palettes from [canva.com/colours](http://canva.com/colours)
 - [HTML](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-- [WordPress](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi-t4XAqtyAAxUxXEEAHbhkBBQQFnoECBwQAQ&url=https%3A%2F%2Fen-gb.wordpress.org%2F&usg=AOvVaw3_Yh8Jp55SAR0s1nidR2lh&opi=89978449) 
 - Python
-- PostgreSQL 
-- Django
+- Heroku
+- GitHub
+- 
 
 ## Bugs and issues
 
-The app does not (yet) work as planned. 
+The app does not yet work as planned. 
 
 As such, the ReadMe does not yet reflect the  app in its current form. 
 
@@ -258,10 +263,10 @@ As such, the ReadMe does not yet reflect the  app in its current form.
 
 ## Credits
 
-https:// 
+[Start Bootstrap](https://github.com/StartBootstrap/startbootstrap-small-business)
 
 Mentor: Richard Wells 
 
-CI tutors: 
+
 
 ---
