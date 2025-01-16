@@ -11,6 +11,7 @@ This is the documentation for my web application **The Scallywags Nanny Dog Walk
 It is my fourth project for Code Institute’s Diploma in Web Application Development.
 
 The app is not fully operational. 
+
 Operational:
 - Structure and navigation 
 - User interaction (contact form)
@@ -19,6 +20,7 @@ Operational:
 - Attribution
 - Deployment (Heroku)
 - Security
+
 Not implemented: 
 - Database
 - Django apps
@@ -118,38 +120,32 @@ Available at https://git.heroku.com/scallywags.git
 ### Features
 
 #### User Authentication
-
-    - Register, login, logout. 
-    - Forgot password system. 
-    - Profiles with editable address, phone number and client photo fields.
+- Register, login, logout. 
+- Forgot password system. 
+- Profiles with editable address, phone number and client photo fields.
 
 #### Pet Management
-
-    - Add/edit/remove pets.
-    - Form validation for pet details (e.g., mandatory fields like name and age).
-    - Pet info: Name, age, breed, behavioural issues, medical issues, vet contact details, max walk length, any other notes, photo, equipment (lead etc.), treats y/n, commands to use, pickup instructions (e.g. keypad number).
-    - Agreemet to terms & conditions - mandatory tick box 
+- Add/edit/remove pets.
+- Form validation for pet details (e.g., mandatory fields like name and age).
+- Pet info: Name, age, breed, behavioural issues, medical issues, vet contact details, max walk length, any other notes, photo, equipment (lead etc.), treats y/n, commands to use, pickup instructions (e.g. keypad number).
+- Agreemet to terms & conditions - mandatory tick box 
 
 #### Booking System
-
-    - Users can view available slots for dog walking/sitting/meet & greet appointment.
-    - Booking forms with validation (e.g., check for overlapping slots).
+- Users can view available slots for dog walking/sitting/meet & greet appointment.
+- Booking forms with validation (e.g., check for overlapping slots).
 
 #### Stripe Integration
-
-    - Payment for bookings through Stripe’s test mode.
-    - Email booking confirmation upon successful payment.
-    - (Future feature - appointment reminders.) 
+- Payment for bookings through Stripe’s test mode.
+- Email booking confirmation upon successful payment.
+- (Future feature - appointment reminders.) 
 
 #### Navigation and Layout
-
-    - Main navigation bar with links: Home, About, Contact, Services, Login
-    - Bootstrap for responsive design.
+- Main navigation bar with links: Home, About, Contact, Services, Login
+- Bootstrap for responsive design.
 
 #### JavaScript Enhancements
-
-    - Real-time validation of booking forms (e.g., prevent double-booking on the same slot).
-    - Interactive calendar to select available slots.
+- Real-time validation of booking forms (e.g., prevent double-booking on the same slot).
+- Interactive calendar to select available slots.
 
 ---
 
@@ -166,10 +162,10 @@ Available at https://git.heroku.com/scallywags.git
 #### App Structure
 
 ##### Main App (core)
--Handles the landing page, about section, navigation, and site-wide settings.
+- Handles the landing page, about section, navigation, and site-wide settings.
 
 ##### User Authentication App (users)
--Handles user registration, login, and profile management.
+- Handles user registration, login, and profile management.
 
 ##### Pets App (pets)
 - Allows users to save details about their pets (e.g., name, breed, age, medical notes).
@@ -207,9 +203,11 @@ The site needs to conform to the principles of UX in all five different planes.
 
 ### Content - elements to include
 
-**Headline** - The Scallywags Nanny 
+##### Headline 
+The Scallywags Nanny 
 
-**Tag-line** - Your trusted dog-walking and pet-sitting service in and around Bristol 
+##### Tag-line 
+Your trusted dog-walking and pet-sitting service in and around Bristol 
 
 ---
 ### Wireframes
@@ -221,7 +219,7 @@ Keeping the design clean and simple was a priority both for UX and responsivenes
 - insert scans of drawings
 
 - Wireframes
-- 
+
 --- 
 
 ### Structure
