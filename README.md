@@ -10,6 +10,20 @@ This is the documentation for my web application **The Scallywags Nanny Dog Walk
 
 It is my fourth project for Code Institute’s Diploma in Web Application Development.
 
+The app is not fully operational. 
+Operational:
+- Structure and navigation 
+- User interaction (contact form)
+- Documentation (read me and intake form)
+- Version control (GitHub)
+- Attribution
+- Deployment (Heroku)
+- Security
+Not implemented: 
+- Database
+- Django apps
+- Stripe integration 
+
 ### Overview 
 A Django-based platform where users can book dog walking or sitting sessions, save their pet's details, and make payments. Additional features include user authentication, Stripe integration for payments, and an intuitive UI/UX enhanced with JavaScript.
 
@@ -106,40 +120,35 @@ I looked at various sites which offer similar services.
 
 ## Deployment
 
+Available at https://git.heroku.com/scallywags.git 
 
 ---
 
 ### Features
 
-- User Authentication
+##### User Authentication
+- Register, login, logout.
+- Profiles with editable address and phone number fields.
 
-    Register, login, logout.
-    Profiles with editable address and phone number fields.
+##### Pet Management
+- Add/edit/remove pets.
+- Form validation for pet details (e.g., mandatory fields like name and age).
 
-- Pet Management
+##### Booking System
+- Users can view available slots for dog walking/sitting.
+- Booking forms with validation (e.g., check for overlapping slots).
 
-    Add/edit/remove pets.
-    Form validation for pet details (e.g., mandatory fields like name and age).
+##### tripe Integration
+- Payment for bookings through Stripe’s test mode.
+- Unlock booking confirmation upon successful payment.
 
-- Booking System
+##### Navigation and Layout
+- Main navigation bar with links: Home, About, Login/Register, My Pets, Bookings.
+- Use Bootstrap for responsive design.
 
-    Users can view available slots for dog walking/sitting.
-    Booking forms with validation (e.g., check for overlapping slots).
-
-- Stripe Integration
-
-    Payment for bookings through Stripe’s test mode.
-    Unlock booking confirmation upon successful payment.
-
-- Navigation and Layout
-
-    Main navigation bar with links: Home, About, Login/Register, My Pets, Bookings.
-    Use Bootstrap for responsive design.
-
-- JavaScript Enhancements
-
-    Real-time validation of booking forms (e.g., prevent double-booking on the same slot).
-    Interactive calendar to select available slots.
+##### avaScript Enhancements
+- Real-time validation of booking forms (e.g., prevent double-booking on the same slot).
+- Interactive calendar to select available slots.
 
 ---
 
@@ -151,6 +160,44 @@ I looked at various sites which offer similar services.
 - Admin dashboard to manage bookings and users.
 
 --- 
+
+### Structure
+
+#### App Structure
+
+##### Main App (core)
+-Handles the landing page, about section, navigation, and site-wide settings.
+
+##### User Authentication App (users)
+-Handles user registration, login, and profile management.
+
+##### Pets App (pets)
+- Allows users to save details about their pets (e.g., name, breed, age, medical notes).
+
+##### Booking App (booking)
+- Manages booking of dog walking or sitting sessions, availability, and schedule display.
+
+##### Payments App (payments)
+- Integrates Stripe for payment processing, tracks completed payments, and unlocks booking confirmations.
+
+#### Database Structure 
+
+##### User (AbstractUser)
+- Extended user model for additional fields like address and phone number.
+
+##### Pet
+- Fields: user (ForeignKey), name, breed, age, medical_notes, profile_picture
+- Relationship: Many pets per user.
+
+##### Booking
+- Fields: user (ForeignKey), pet (ForeignKey), service_type (choices: Walking, Sitting), date, time, duration, status (Pending/Confirmed)
+- Relationship: One booking per pet per session.
+
+##### Payment
+- Fields: user (ForeignKey), booking (ForeignKey), amount, payment_status, transaction_id
+- Relationship: One payment per booking.
+
+---
 
 ## Design, layout, colours
 
@@ -252,7 +299,7 @@ Colour palettes from [canva.com/colours](http://canva.com/colours)
 - PostgreSQL 
 - Django
 
-## Bugs and issues
+## Testing, Bugs and issues
 
 The app does not (yet) work as planned. 
 
