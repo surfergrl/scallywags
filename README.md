@@ -1,6 +1,6 @@
 # The Scallywags Nanny Dog Walking Service Website & Booking Platform
 
-![Scallywags Nanny logo](/assets/images/SN-logo.jpg)
+![Scallywags Nanny logo](https://github.com/surfergrl/scallywags/blob/main/static/node_modules/startbootstrap-small-business/dist/assets/SN-logo.jpg)
 
 By Kat Dawes
 
@@ -52,11 +52,7 @@ A Django-based platform where users can book dog walking or sitting sessions, sa
 
 ### User Stories
 
-The user stories are based on questions asked of the business owner. 
-
-Questions asked: 
-
-
+The user stories are based on questions asked of the business owner. This can be found in the file user-intake.md [user-intake.md](/userintake.md)
 
 Resulting user profiles: 
 - New potential customer who wants to research services
