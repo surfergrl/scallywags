@@ -10,7 +10,7 @@
             <h1 class="font-weight-light">The Scallywags Nanny</h1>
             <p>Dog-walking and pet-sitting in and around Bristol.</p>
             <p>Experienced, professional and passionate about dogs.</p>
-            <p>Please see the About page to learn about me and see reviews from happy customers, and photos of happy dogs.</p>
+            <p>Please see the <a href=" {{ url_for('about') }}">About</a> page to learn about me and see reviews from happy customers, and photos of happy dogs.</p>
             <p>If you have any questions at all, you are welcome to <a href=" {{ url_for('contact') }}">Contact me.</a></p>
             <p>If you are registered as a client, you can book walks or pet-sits on the <a href=" {{ url_for('services') }} ">Services</a> page.</p>
             <a class="btn btn-primary" href=" {{ url_for('services') }}">Learn more</a>

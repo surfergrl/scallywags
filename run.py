@@ -1,5 +1,5 @@
 import os 
-from flask import Flask, render_template
+from flask import Flask, render_template, request, flash
 
 app = Flask(__name__)
 
@@ -13,9 +13,14 @@ def about():
     return render_template("/about.html")
 
 
-@app.route("/contact")
+@app.route("/contact", methods=["GET", "POST"])
 def contact():
-    return render_template("/contact.html")
+    if request.method == "POST":
+        print(request.form.get("name"))
+        print(request.form["email"])
+        print(request.form["phone"])
+        print(request.form["message"])
+    return render_template("contact.html", page_title="Contact")
 
 
 @app.route("/services")
