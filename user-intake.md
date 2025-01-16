@@ -6,12 +6,13 @@
    - What motivates you to run this business, and what are your primary goals? Ha, I love dogs! Again I'll email it you. 
 
 2. **Target Audience**
-   - Who are your primary customers (e.g., working professionals, elderly pet owners)? 9-5 workers. 
-   - Are there specific geographic areas you serve? – West and Central Bristol for walking. Surrounding areas for pet-sitting.  
+   - Who are your primary customers (e.g., working professionals, elderly pet owners)? 9-5 workers. But this is a tough one really.
+   I would say I have quite a lot of enquiries, often word of mouth, from new potential customer who wants to research my services. I want them to have a good idea of what I do/offer before they call/email me with loads of questions. Then there are clients who want to book the initial meet&greet so they can come on boards. If they can see my schedule and book that that would be great, but they can't book walks till I've agreed them. I won't walk dogs I believe won't suit me and my pack! Then I have about ten regular clients at the moment. They email, message, call to book things it's a bit of a nightmare, I want them to be able to book things, cancel and change their own bookings so I'm not online for two hours a night sorting shit out. 
+   - Are there specific geographic areas you serve? – West and Central Bristol for walking. Surrounding areas for pet-sitting. But I can be really flexible. 
 
 3. **Pricing Structure**
-   - How do you charge for your services (e.g., hourly, flat fee per session)? From £15 for walking; from £30 per night for sitting. Other services depend on the details of the pet, time etc. 
-   - Do you offer packages or discounts for recurring bookings? No. 
+   - How do you charge for your services (e.g., hourly, flat fee per session)? From £15 for walking; from £30 per night for sitting. Other services depend on the details of the pet, time etc. So I'd like to be able to take money for a bespoke package online. 
+   - Do you offer packages or discounts for recurring bookings? No. I don't need to discount. 
 
 ---
 
